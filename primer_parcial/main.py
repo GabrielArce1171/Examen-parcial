@@ -1,21 +1,21 @@
-import funciones.conversion_tiempo as conversion_tiempo
-import funciones.pago_semanal as pago_semanal
 import funciones.triangulo as triangulo
+import funciones.pago_semanal as pago_semanal
+import funciones.conversion_tiempo as conversion_tiempo
 
 def main():
-    triangulo.leer_base_altura()
-    triangulo.leer_calcular_area()
-    triangulo.mostrar_area()
+    base, altura = triangulo.leer_base_altura()
+    area = triangulo.calcular_area(base, altura)
+    triangulo.mostrar_area(area)
 
-    leer_horas_tarifa()
-    calcular_pago()
-    mostrar_pago()
+    horas, tarifa = pago_semanal.leer_horas_tarifa()
+    pago = pago_semanal.calcular_pago(horas, tarifa)
+    pago_semanal.mostrar_pago(pago)
 
-    conversion_timepo.leer_segundos()
-    conversion_timepo.convertir_tiempo()
-    conversion_timepo.mostrar_tiempo()
+    segundos = conversion_tiempo.leer_segundos()
+    horas, minutos, segundos = conversion_tiempo.convertir_tiempo(segundos)
+    conversion_tiempo.mostrar_tiempo(horas, minutos, segundos)
 
-    def main(): 
+ def main(): 
 pass 
 if __name__ == "__main__": 
-main() 
+main()
