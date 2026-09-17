@@ -1,4 +1,4 @@
-import funciones.conversion_timepo as conversion_timepo
+import funciones.conversion_tiempo as conversion_tiempo
 import funciones.pago_semanal as pago_semanal
 import funciones.triangulo as triangulo
 
